@@ -2,6 +2,11 @@
 2. 所以我一開始是叫他用 mlx 做
 3. 另外已經安裝了 miniconda
 
+
+我是這樣問 AI 開始的
+
+https://poe.com/s/j2pKS1Mpmj6Fdt4a31PD
+
 ```
 conda create -n mlx-distill python=3.10 -y
 conda activate mlx-distill
@@ -15,7 +20,7 @@ pip install ultralytics
 pip install tqdm pyyaml
 ```
 
-訓練教師模型
+# 訓練教師模型
 
 ```
 python train_teacher.py
@@ -34,7 +39,7 @@ python train_teacher.py
 混淆矩陣已保存到 results/confusion_matrix.png
 ```
 
-訓練學生模型
+# 蒸餾學生模型
 
 ```
 python distill_student.py
